@@ -1,0 +1,30 @@
+[global]
+# By default, Streamlit checks if the Python watchdog module is available and, if not, prints a warning asking for you to install it. The watchdog module is not required, but highly recommended. It improves Streamlit's ability to detect changes to files in your filesystem.
+# If you'd like to turn off this warning, set this to True.
+# Default: false
+disableWatchdogWarning = false
+
+# If True, will show a warning when you run a Streamlit-enabled script via "python my_script.py".
+# Default: true
+showWarningOnDirectExecution = true
+
+[server]
+# Controls the default browser connection type. This can be set to one of the following: "default" (let the Streamlit server decide), "http" (HTTP), or "ws" (WebSocket).
+# Default: "default"
+headless = false
+
+# The public-facing IP address where the Streamlit server will be run.
+# Default: "localhost"
+address = "localhost"
+
+# The port where the server will be listening.
+# Default: 8501
+port = 8501
+
+[theme]
+base = "dark"
+primaryColor = "#0A84FF"  # Apple's blue color
+backgroundColor = "#1D1F21"  # Dark gray
+secondaryBackgroundColor = "#282A2E"  # Lighter dark gray
+textColor = "#FFFFFF"  # White
+font = "Helvetica Neue"
